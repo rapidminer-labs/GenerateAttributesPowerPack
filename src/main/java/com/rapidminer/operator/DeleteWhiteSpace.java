@@ -7,8 +7,8 @@ import com.rapidminer.tools.expression.internal.function.AbstractArbitraryString
 public class DeleteWhiteSpace extends
 		AbstractArbitraryStringInputStringOutputFunction {
 
-	public Chop() {
-		super("text_transformation.chop", 1);
+	public DeleteWhiteSpace() {
+		super("text_transformation.deletewhitespace", 1);
 		// TODO Auto-generated constructor stub
 	}
 
@@ -16,7 +16,7 @@ public class DeleteWhiteSpace extends
 	@Override
 	protected String compute(String... values) {
 		// TODO Auto-generated method stub
-		return StringUtils.deleteWhitespace((values[0]);
+		return StringUtils.deleteWhitespace(values[0]);
 	}
 
 	@Override
